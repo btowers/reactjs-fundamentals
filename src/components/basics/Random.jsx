@@ -8,7 +8,7 @@ export default props => {
 
     return (
         <div>
-            <h2>Random Number</h2>
+            <h3>Random Number</h3>
             <p>Random number between {min} and {max - 1} is: {random_number}</p>
         </div>
     )

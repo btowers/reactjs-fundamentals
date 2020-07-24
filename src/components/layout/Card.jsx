@@ -1,10 +1,15 @@
+import './Card.css'
+
 import React from 'react'
 
-export default () => {
+export default props => {
 
     return (
-        <div>
-            Card
+        <div className="card">
+            <div className="title">{props.title}</div>
+            <div className="content">
+                {props.children}
+            </div>
         </div>
     )
 }

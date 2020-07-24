@@ -6,7 +6,6 @@ export default function FirstComponent() {
 
     return (
         <div>
-            <h2>1st Component</h2>
             <p>{msg}</p>
         </div>
     )
