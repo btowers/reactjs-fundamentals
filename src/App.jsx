@@ -3,6 +3,8 @@ import './App.css'
 import React from 'react'
 
 import Card from './components/layout/Card'
+import Family from './components/basics/Family'
+import FamilyMember from './components/basics/FamilyMember'
 import Random from './components/basics/Random'
 import Fragment from './components/basics/Fragment'
 import ComponentWithParams from './components/basics/ComponentWithParams'
@@ -12,6 +14,13 @@ export default () => (
     <div className="app">
         <h1>React Fundamentals</h1>
         <div className="cards">
+            <Card title="#05 - Component With Children" color="#8fcfd1">
+                <Family surname="Torres">
+                    <FamilyMember name="Ana"></FamilyMember>
+                    <FamilyMember name="Carla"></FamilyMember>
+                    <FamilyMember name="Pedro"></FamilyMember>
+                </Family>
+            </Card>
             <Card title="#04 - Random" color="#93b5e1">
                 <Random min={1} max={61} />
             </Card>
